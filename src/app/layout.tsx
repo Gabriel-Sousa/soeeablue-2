@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,12 @@ export default function RootLayout({
             <li className="text-soeeablue-green-500 hover:text-soeeablue-blue-500 transition-colors cursor-pointer">SERVIÇOS</li>
             <li className="text-soeeablue-green-500 hover:text-soeeablue-blue-500 transition-colors cursor-pointer">AGENDAR</li>
             <li className="text-soeeablue-green-500 hover:text-soeeablue-blue-500 transition-colors cursor-pointer">CONTATE-NOS</li>
-            <li className="cursor-pointer hover:text-soeeablue-green-500"><img src="/userIcon.svg" alt="" /></li>
+            <li className="cursor-pointer hover:text-soeeablue-green-500">
+
+              <Link href={'/dashboard'}>
+                <img src="/userIcon.svg" alt="" />
+              </Link>
+            </li>
           </ul>
         </header>
 
