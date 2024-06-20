@@ -24,8 +24,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <header className="max-w-6xl mx-auto mt-8 flex justify-between items-center">
-          <img src="/soeeablue-logo.svg" alt="" />
-
+          <Link href={'/'}>
+            <img src="/soeeablue-logo.svg" alt="" />
+          </Link>
 
           <ul className="flex items-center gap-9 font-sora font-bold text-xl ">
             <li className="text-soeeablue-green-500 hover:text-soeeablue-blue-500 transition-colors cursor-pointer">A SOEEABLUE</li>
