@@ -23,9 +23,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
       </head>
       <body className={inter.className}>
-        <header className="max-w-6xl mx-auto mt-8 flex justify-between items-center">
+        <header className="transition-all max-w-[1020px] xl:max-w-[1280px] mx-auto mt-8 flex justify-between items-center">
           <Link href={'/'}>
-            <img src="/soeeablue-logo.svg" alt="" />
+            <img src="/logo-horizontal.svg" alt="" />
           </Link>
 
           <ul className="flex items-center gap-9 font-sora font-bold text-xl ">
